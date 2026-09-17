@@ -18,9 +18,13 @@ Each publication is exported as a versioned **Exploratory Research Preprint (ERP
 
 | ID | Research line | Preprint | Research genealogy | Status |
 | --- | --- | --- | --- | --- |
-| `ERP-0001` | Finite prime-log operator / Riemann-related exploration | **O_X: A Finite Mirrored Prime-Log Operator** | research record from 2026-08-06; first auditable Git record 2026-08-24 | Exploratory |
-| `ERP-0002` | Adaptive inference resource allocation | **Adaptive Inference Resource Regulator (AIRR): A Multi-Resource Closed-Loop Controller for Experimental AI Inference Allocation** | Git-grounded from 2026-08-24 | Experimental / hypothesis-driven |
-| `ERP-0003` | Pre-inference admission regulation | **The Silence-First Framework (SSF) v0.2: An Experimental Pre-Inference Admission Regulator** | repository genealogy from 2026-02-02; scientific reconstruction 2026-08-24 | Experimental / reconstructed / falsifiable |
+| `ERP-0001` | Finite prime-log operator / Riemann-related exploration | [**O_X: A Finite Mirrored Prime-Log Operator**](preprints/ERP-0001-OX/) | research record from 2026-08-06; first auditable Git record 2026-08-24 | Exploratory |
+| `ERP-0002` | Adaptive inference resource allocation | [**Adaptive Inference Resource Regulator (AIRR): A Multi-Resource Closed-Loop Controller for Experimental AI Inference Allocation**](preprints/ERP-0002-AIRR/) | Git-grounded from 2026-08-24 | Experimental / hypothesis-driven |
+| `ERP-0003` | Pre-inference admission regulation | [**The Silence-First Framework (SSF) v0.2: An Experimental Pre-Inference Admission Regulator**](preprints/ERP-0003-SSF/) | repository genealogy from 2026-02-02; scientific reconstruction 2026-08-24 | Experimental / reconstructed / falsifiable |
+
+**Initial public release:** 17 September 2026.  
+**Peer review:** none claimed for the initial ERP releases.  
+**DOI:** not assigned at the initial release.
 
 ## Repository structure
 
@@ -32,6 +36,7 @@ Muze-X-Lab-Search-Dev/
 ├── CITATION.cff
 ├── CONTRIBUTING.md
 ├── PREPRINT_INDEX.json
+├── PUBLICATION_MANIFEST.json
 └── preprints/
     ├── ERP-0001-OX/
     │   ├── README.md
@@ -39,10 +44,12 @@ Muze-X-Lab-Search-Dev/
     │   └── PUBLICATION-MANIFEST.json
     ├── ERP-0002-AIRR/
     │   ├── README.md
-    │   └── METADATA.json
+    │   ├── METADATA.json
+    │   └── PUBLICATION-MANIFEST.json
     └── ERP-0003-SSF/
         ├── README.md
         ├── METADATA.json
+        ├── PUBLICATION-MANIFEST.json
         └── source/
             ├── ssf_preprint.tex
             └── references.bib
@@ -90,10 +97,10 @@ Each ERP records at least:
 2. the first auditable Git record where available;
 3. the private source repository;
 4. the exact private source commit used to construct the public snapshot;
-5. the public release commit and release date once published;
-6. later DOI or archival identifier if assigned.
+5. the public initial publication commit and release date;
+6. a later DOI or archival identifier if assigned.
 
-The private laboratories remain authoritative for ongoing work. This public repository contains selected, frozen publication snapshots.
+The private laboratories remain authoritative for ongoing work. This public repository contains selected, frozen publication snapshots. See [`PUBLICATION_MANIFEST.json`](PUBLICATION_MANIFEST.json) for the collection-level provenance record.
 
 ## Licensing
 
