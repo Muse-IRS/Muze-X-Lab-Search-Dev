@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0.0",
+  "collection": "Muze-X Lab Search & Dev",
+  "repository": "Muse-IRS/Muze-X-Lab-Search-Dev",
+  "visibility": "public",
+  "public_release_date": "2026-09-17",
+  "publication_rule": "Public availability freezes a research snapshot; it does not promote epistemic status.",
+  "licensing": {
+    "manuscripts_and_publication_metadata": "CC-BY-4.0",
+    "imported_source_code": "retain_originating_project_license",
+    "third_party_material": "retain_third_party_terms"
+  },
+  "preprints": [
+    {
+      "id": "ERP-0001",
+      "public_path": "preprints/ERP-0001-OX",
+      "public_initial_commit": "263ce083f9f2a2e5df410d95f41f45065649e790",
+      "private_source_repository": "Muse-IRS/ox-finite-riemann-operator-lab",
+      "private_source_commit": "e772e6df4001c2e2251caf93c3fa4b47fa2a2779",
+      "research_start": "2026-08-06",
+      "peer_reviewed": false
+    },
+    {
+      "id": "ERP-0002",
+      "public_path": "preprints/ERP-0002-AIRR",
+      "public_initial_commit": "7fa711ecc5f270dc5ea4279b714c2c4afa1a9e3c",
+      "private_source_repository": "Muse-IRS/adaptive-inference-resource-regulator",
+      "private_source_commit": "6c5d095950de8f234dad487406e5b3aa58d02820",
+      "research_start": "2026-08-24",
+      "peer_reviewed": false
+    },
+    {
+      "id": "ERP-0003",
+      "public_path": "preprints/ERP-0003-SSF",
+      "public_initial_commit": "3913a1edead4a8be0792dc1272a22f2c8350b44a",
+      "private_source_repository": "Muse-IRS/aetios-muse-systemic-matrix",
+      "private_source_commit": "1863bf043943a77b228708d9ccdc3ae35cb51950",
+      "research_start": "2026-02-02",
+      "scientific_reconstruction_date": "2026-08-24",
+      "peer_reviewed": false
+    }
+  ],
+  "doi": null,
+  "status": "PUBLIC_COLLECTION_ACTIVE"
+}
