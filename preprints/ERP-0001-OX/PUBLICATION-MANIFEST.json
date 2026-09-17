@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.2.0",
+  "preprint_id": "ERP-0001",
+  "title": "O_X: A Finite Mirrored Prime-Log Operator",
+  "document_class": "Exploratory Research Preprint",
+  "collection_name": "Muze-X Lab Search & Dev",
+  "public_repository": "Muse-IRS/Muze-X-Lab-Search-Dev",
+  "source_repository": "Muse-IRS/ox-finite-riemann-operator-lab",
+  "source_repository_visibility": "private",
+  "source_commit": "e772e6df4001c2e2251caf93c3fa4b47fa2a2779",
+  "research_start_date": "2026-08-06",
+  "first_auditable_git_record": {
+    "date_utc": "2026-08-24T17:26:37Z",
+    "commit": "dba9d8d9d426b77932c84198412b5ee73ed7318f"
+  },
+  "publication_state": "PUBLIC_PREPRINT",
+  "public_release_date": "2026-09-17",
+  "public_initial_commit": "263ce083f9f2a2e5df410d95f41f45065649e790",
+  "doi": null,
+  "manuscript_license": "CC-BY-4.0",
+  "scientific_boundary": {
+    "peer_reviewed": false,
+    "scientific_status": "EXPLORATORY",
+    "riemann_hypothesis_proved": false,
+    "riemann_bridge_proved": false,
+    "publication_implies_status_promotion": false
+  }
+}
