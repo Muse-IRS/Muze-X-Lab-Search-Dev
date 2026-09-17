@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "collection": {
+    "name": "Muze-X Lab Search & Dev",
+    "repository": "Muse-IRS/Muze-X-Lab-Search-Dev",
+    "description": "Open exploratory research preprints from Muze-X Lab — versioned scientific notes, falsifiable models, reproducible methods, provenance records, and disclosed human–AI collaborative contributions."
+  },
+  "preprints": [
+    {
+      "id": "ERP-0001",
+      "title": "O_X: A Finite Mirrored Prime-Log Operator",
+      "status": "EXPLORATORY",
+      "research_start": "2026-08-06",
+      "first_auditable_git_record": "2026-08-24T17:26:37Z",
+      "source_repository": "Muse-IRS/ox-finite-riemann-operator-lab",
+      "source_commit": "e772e6df4001c2e2251caf93c3fa4b47fa2a2779",
+      "public_path": "preprints/ERP-0001-OX",
+      "peer_reviewed": false,
+      "doi": null
+    },
+    {
+      "id": "ERP-0002",
+      "title": "Adaptive Inference Resource Regulator (AIRR): A Multi-Resource Closed-Loop Controller for Experimental AI Inference Allocation",
+      "status": "EXPERIMENTAL_HYPOTHESIS_DRIVEN",
+      "research_start": "2026-08-24",
+      "first_auditable_git_record": "2026-08-24T20:42:10Z",
+      "source_repository": "Muse-IRS/adaptive-inference-resource-regulator",
+      "source_commit": "6c5d095950de8f234dad487406e5b3aa58d02820",
+      "public_path": "preprints/ERP-0002-AIRR",
+      "peer_reviewed": false,
+      "doi": null
+    },
+    {
+      "id": "ERP-0003",
+      "title": "The Silence-First Framework (SSF) v0.2: An Experimental Pre-Inference Admission Regulator",
+      "status": "EXPERIMENTAL_RECONSTRUCTED_FALSIFIABLE",
+      "research_start": "2026-02-02",
+      "first_auditable_git_record": "2026-02-02T14:52:58Z",
+      "scientific_reconstruction_date": "2026-08-24",
+      "source_repository": "Muse-IRS/aetios-muse-systemic-matrix",
+      "source_commit": "1863bf043943a77b228708d9ccdc3ae35cb51950",
+      "public_path": "preprints/ERP-0003-SSF",
+      "peer_reviewed": false,
+      "doi": null
+    }
+  ]
+}
