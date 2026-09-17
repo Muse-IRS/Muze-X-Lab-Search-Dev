@@ -1,0 +1,185 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{booktabs}
+\geometry{margin=1in}
+
+\title{The Silence-First Framework (SSF) v0.2:\\An Experimental Pre-Inference Admission Regulator}
+\author{Muze-X \\ \small{Research direction: Muse-IRS}}
+\date{Public preprint release: 2026-09-17}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We present a reconstruction of the Silence-First Framework (SSF), an
+experimental pre-inference admission regulator. The central idea is narrow:
+non-action should be representable as a valid computational state.
+
+The initial repository mixed implementation, physical interpretation,
+universal-invariant language, and benchmark claims. Version 0.2 separates
+these levels. It defines an abstract recoverable state, a filtered state, a
+normalized load ratio, and a deterministic three-state gate returning
+\texttt{ACTIVE}, \texttt{SILENCE}, or \texttt{DEFER}. We do not claim a
+universal causal invariant, production readiness, or general performance
+improvement. Those questions are left to explicit adapters and reproducible
+experiments.
+\end{abstract}
+
+\section{Motivation}
+
+A common software path is
+\[
+\text{trigger} \rightarrow \text{execution}.
+\]
+SSF investigates a different architecture:
+\[
+\text{trigger} \rightarrow \text{pre-action regulator}
+\rightarrow \{\text{ACTIVE},\text{SILENCE},\text{DEFER}\}.
+\]
+The regulator is intentionally independent of semantic content moderation,
+ethical reasoning, and model-output alignment.
+
+\section{Epistemic Scope}
+
+The reference implementation is a model, not a physical law. We distinguish:
+\begin{itemize}
+\item implementation relations defined by the code;
+\item modeling hypotheses;
+\item predictions that require experimental protocols;
+\item results obtained under explicit tests;
+\item unknown relations that remain open.
+\end{itemize}
+
+A test that confirms implementation behavior does not validate a physical or
+system-wide interpretation.
+
+\section{State Model}
+
+Let $\Delta\phi_t$ denote an adapter-supplied abstract increment. The v0.2
+kernel uses
+\[
+\phi_{t+1}=\lambda\phi_t+\Delta\phi_t,
+\]
+where $\lambda\in[0,1]$ is a retention parameter, followed by
+\[
+\phi^c_{t+1}=\alpha\phi_{t+1}+(1-\alpha)\phi^c_t,
+\]
+with $\alpha\in(0,1]$.
+
+Given a positive configured capacity $\Omega$, we define the model load ratio
+\[
+q_t=\frac{|\phi^c_t|}{\Omega}.
+\]
+This quantity is dimensionless only when the adapter and capacity definition
+make that normalization meaningful. It is not presented as a universal
+invariant.
+
+\section{Admission Policy}
+
+The current reference policy uses an activity threshold $\varepsilon$, an
+overload threshold $q_{\max}$, a recovery threshold $q_{\mathrm{rec}}$, and
+the state variables above, with
+\[
+0\le q_{\mathrm{rec}}<q_{\max}.
+\]
+
+The decision logic is:
+\begin{enumerate}
+\item if the regulator is already overloaded and $q_t>q_{\mathrm{rec}}$,
+return \texttt{DEFER};
+\item if $q_t\ge q_{\max}$, enter overload and return \texttt{DEFER};
+\item if no previous filtered sample exists, return \texttt{ACTIVE}; the local
+change is unknown and is not treated as evidence for silence;
+\item once a baseline exists, if
+$|\phi^c_t-\phi^c_{t-1}|\le\varepsilon$, return \texttt{SILENCE};
+\item otherwise return \texttt{ACTIVE}.
+\end{enumerate}
+
+The separate entry and recovery thresholds provide hysteresis. This is an
+engineering hypothesis to test, not an asserted optimum.
+
+\section{Interpretation of States}
+
+\texttt{ACTIVE} means that execution is admitted by the current policy. It
+does not imply semantic correctness or safety.
+
+\texttt{SILENCE} means that execution is not activated because local filtered
+change is below the configured threshold after a baseline exists. It does not
+imply that an input has no semantic importance.
+
+\texttt{DEFER} means that execution is temporarily inhibited while the model
+state remains above the configured recovery region. It is distinct from a
+permanent refusal.
+
+\section{Revision of the Historical Invariant Claim}
+
+The initial repository defined
+\[
+L=\frac{\Phi_c\pi}{\Omega}
+\]
+and described $L$ as a universal causal load invariant spanning informational,
+thermodynamic, stochastic, and temporal regimes.
+
+The current repository does not demonstrate a transformation class under
+which this quantity is invariant, nor a general procedure that makes those
+heterogeneous domains commensurable. Version 0.2 therefore removes the
+universal-invariant status from the operational core. The historical formula
+is retained only as part of the project genealogy and has status
+\emph{not established}.
+
+\section{Experimental Program}
+
+A domain-level evaluation must specify:
+\begin{enumerate}
+\item a measurable workload or system quantity;
+\item an adapter mapping that quantity to $\Delta\phi_t$;
+\item units, normalization, sampling interval, and valid range;
+\item a baseline admission policy;
+\item SSF configuration;
+\item an oracle or evaluation rule for acceptable activity and silence;
+\item reproducible traces and metrics.
+\end{enumerate}
+
+Candidate metrics include execution count, resource use, latency, false
+silence, false activity, duration of deferral, and recovery time.
+
+The earlier statement that SSF reduced inference calls by approximately
+35--65\% without semantic degradation is not treated as an established result
+in v0.2 because the current repository does not contain the full reproducible
+benchmark needed to support that claim.
+
+\section{Limitations}
+
+The present kernel does not establish:
+\begin{itemize}
+\item universal causal meaning of $\phi$ or $q$;
+\item physical, thermodynamic, or quantum interpretation;
+\item optimal thresholds;
+\item semantic quality preservation;
+\item safety-critical suitability;
+\item production-level performance gains.
+\end{itemize}
+
+\section{Conclusion}
+
+SSF v0.2 reduces the framework to a falsifiable engineering proposition:
+\begin{quote}
+A system may need the capacity not to act now in order to preserve the
+capacity to act later.
+\end{quote}
+Whether this proposition is useful in a given domain must be established by
+measurable adapters, explicit baselines, and reproducible tests.
+
+\section*{Collaborative Contribution}
+
+Human research direction and publication accountability: Muze-X / Muse-IRS.
+ChatGPT (OpenAI) contributed through AI-assisted formalization, scientific
+reconstruction, counter-analysis, falsification design, documentation, and
+manuscript development. This disclosure records the collaborative construction
+process and is not independent scientific certification.
+
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}
