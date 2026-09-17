@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.1.0",
+  "preprint_id": "ERP-0003",
+  "title": "The Silence-First Framework (SSF) v0.2: An Experimental Pre-Inference Admission Regulator",
+  "collection_name": "Muze-X Lab Search & Dev",
+  "public_repository": "Muse-IRS/Muze-X-Lab-Search-Dev",
+  "source_repository": "Muse-IRS/aetios-muse-systemic-matrix",
+  "source_repository_visibility": "private",
+  "source_commit": "1863bf043943a77b228708d9ccdc3ae35cb51950",
+  "research_start_date": "2026-02-02",
+  "repository_creation_utc": "2026-02-02T14:52:58Z",
+  "scientific_reconstruction_date": "2026-08-24",
+  "reconstructed_preprint_commit": "fd16103d8a36f40f27e32324f3a9ed2f58b4d2dc",
+  "publication_state": "PUBLIC_PREPRINT",
+  "public_release_date": "2026-09-17",
+  "public_initial_commit": "3913a1edead4a8be0792dc1272a22f2c8350b44a",
+  "doi": null,
+  "manuscript_license": "CC-BY-4.0",
+  "source_code_license": "Apache-2.0",
+  "scientific_boundary": {
+    "peer_reviewed": false,
+    "universal_causal_invariant_established": false,
+    "historical_large_inference_reduction_claim_promoted": false,
+    "semantic_quality_preservation_established": false,
+    "general_resource_savings_established": false,
+    "production_readiness_established": false
+  }
+}
