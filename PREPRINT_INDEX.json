@@ -1,8 +1,9 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "collection": {
     "name": "Muze-X Lab Search & Dev",
     "repository": "Muse-IRS/Muze-X-Lab-Search-Dev",
+    "public_release_date": "2026-09-17",
     "description": "Open exploratory research preprints from Muze-X Lab — versioned scientific notes, falsifiable models, reproducible methods, provenance records, and disclosed human–AI collaborative contributions."
   },
   "preprints": [
@@ -15,6 +16,7 @@
       "source_repository": "Muse-IRS/ox-finite-riemann-operator-lab",
       "source_commit": "e772e6df4001c2e2251caf93c3fa4b47fa2a2779",
       "public_path": "preprints/ERP-0001-OX",
+      "public_initial_commit": "263ce083f9f2a2e5df410d95f41f45065649e790",
       "peer_reviewed": false,
       "doi": null
     },
@@ -27,6 +29,7 @@
       "source_repository": "Muse-IRS/adaptive-inference-resource-regulator",
       "source_commit": "6c5d095950de8f234dad487406e5b3aa58d02820",
       "public_path": "preprints/ERP-0002-AIRR",
+      "public_initial_commit": "7fa711ecc5f270dc5ea4279b714c2c4afa1a9e3c",
       "peer_reviewed": false,
       "doi": null
     },
@@ -40,6 +43,7 @@
       "source_repository": "Muse-IRS/aetios-muse-systemic-matrix",
       "source_commit": "1863bf043943a77b228708d9ccdc3ae35cb51950",
       "public_path": "preprints/ERP-0003-SSF",
+      "public_initial_commit": "3913a1edead4a8be0792dc1272a22f2c8350b44a",
       "peer_reviewed": false,
       "doi": null
     }
