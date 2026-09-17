@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.1.0",
+  "preprint_id": "ERP-0002",
+  "title": "Adaptive Inference Resource Regulator (AIRR): A Multi-Resource Closed-Loop Controller for Experimental AI Inference Allocation",
+  "collection": "Muze-X Lab Search & Dev",
+  "document_class": "Exploratory Research Preprint",
+  "version": "v0.2",
+  "draft_date": "2026-09-17",
+  "publication_status": "PUBLIC_PREPRINT",
+  "peer_reviewed": false,
+  "scientific_status": "EXPERIMENTAL_HYPOTHESIS_DRIVEN",
+  "research_start": {
+    "date": "2026-08-24",
+    "evidence_class": "GIT_GROUNDED",
+    "first_repository_timestamp_utc": "2026-08-24T20:42:10Z",
+    "first_bootstrap_timestamp_utc": "2026-08-24T20:52:39Z",
+    "first_bootstrap_commit": "26fa75dfee7b0aaac526c1332b2aaba55b660c0b"
+  },
+  "source": {
+    "private_repository": "Muse-IRS/adaptive-inference-resource-regulator",
+    "source_commit": "6c5d095950de8f234dad487406e5b3aa58d02820",
+    "source_license": "Apache-2.0"
+  },
+  "contributors": [
+    {
+      "name": "Muze-X · Muse-IRS",
+      "role": "human_author_research_direction",
+      "accountability": "final_scientific_claims_status_and_publication_decisions"
+    },
+    {
+      "name": "ChatGPT (OpenAI)",
+      "role": "ai_assisted_collaborative_contribution",
+      "independent_certification_claimed": false
+    }
+  ],
+  "claim_boundary": {
+    "real_llm_resource_savings_established": false,
+    "semantic_quality_preservation_established": false,
+    "energy_savings_established": false,
+    "production_readiness_established": false,
+    "synthetic_tests_are_proof": false
+  },
+  "release": {
+    "public_repository": "Muse-IRS/Muze-X-Lab-Search-Dev",
+    "public_release_date": "2026-09-17",
+    "public_initial_commit": "7fa711ecc5f270dc5ea4279b714c2c4afa1a9e3c",
+    "doi": null
+  }
+}
