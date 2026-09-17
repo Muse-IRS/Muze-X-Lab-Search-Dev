@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.1.0",
+  "preprint_id": "ERP-0002",
+  "title": "Adaptive Inference Resource Regulator (AIRR): A Multi-Resource Closed-Loop Controller for Experimental AI Inference Allocation",
+  "collection_name": "Muze-X Lab Search & Dev",
+  "public_repository": "Muse-IRS/Muze-X-Lab-Search-Dev",
+  "source_repository": "Muse-IRS/adaptive-inference-resource-regulator",
+  "source_repository_visibility": "private",
+  "source_commit": "6c5d095950de8f234dad487406e5b3aa58d02820",
+  "research_start_date": "2026-08-24",
+  "first_auditable_git_record": "2026-08-24T20:42:10Z",
+  "first_bootstrap_commit": "26fa75dfee7b0aaac526c1332b2aaba55b660c0b",
+  "publication_state": "PUBLIC_PREPRINT",
+  "public_release_date": "2026-09-17",
+  "public_initial_commit": "7fa711ecc5f270dc5ea4279b714c2c4afa1a9e3c",
+  "doi": null,
+  "manuscript_license": "CC-BY-4.0",
+  "source_code_license": "Apache-2.0",
+  "scientific_boundary": {
+    "peer_reviewed": false,
+    "real_llm_resource_savings_established": false,
+    "semantic_quality_preservation_established": false,
+    "energy_savings_established": false,
+    "production_readiness_established": false
+  }
+}
