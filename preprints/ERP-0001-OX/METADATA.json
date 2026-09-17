@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.2.0",
+  "preprint_id": "ERP-0001",
+  "title": "O_X: A Finite Mirrored Prime-Log Operator",
+  "document_class": "Exploratory Research Preprint",
+  "collection": "Muze-X Lab Search & Dev",
+  "version": "v0.1",
+  "draft_date": "2026-09-17",
+  "publication_status": "PUBLIC_PREPRINT",
+  "peer_reviewed": false,
+  "scientific_status": "EXPLORATORY",
+  "research_start": {
+    "date": "2026-08-06",
+    "evidence_class": "RECONSTRUCTED_COLLABORATIVE_RESEARCH_RECORD"
+  },
+  "git_provenance": {
+    "private_repository": "Muse-IRS/ox-finite-riemann-operator-lab",
+    "first_git_timestamp_utc": "2026-08-24T17:26:37Z",
+    "first_commit": "dba9d8d9d426b77932c84198412b5ee73ed7318f",
+    "source_commit": "e772e6df4001c2e2251caf93c3fa4b47fa2a2779"
+  },
+  "contributors": [
+    {
+      "name": "Muze-X · Muse-IRS",
+      "role": "human_author_research_direction",
+      "accountability": "final_scientific_claims_status_and_publication_decisions"
+    },
+    {
+      "name": "ChatGPT (OpenAI)",
+      "role": "ai_assisted_collaborative_contribution",
+      "independent_academic_authorship_claimed": false,
+      "independent_certification_claimed": false
+    }
+  ],
+  "release": {
+    "public_repository": "Muse-IRS/Muze-X-Lab-Search-Dev",
+    "public_release_date": "2026-09-17",
+    "public_initial_commit": "263ce083f9f2a2e5df410d95f41f45065649e790",
+    "doi": null
+  },
+  "claim_boundary": {
+    "riemann_hypothesis_proved": false,
+    "riemann_bridge_proved": false,
+    "finite_definition_accepted": true,
+    "publication_implies_status_promotion": false
+  }
+}
