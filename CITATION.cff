@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Cite the exact ERP version used; this file describes the Muze-X Lab Search & Dev collection."
+title: "Muze-X Lab Search & Dev"
+type: dataset
+authors:
+  - name: "Muze-X · Muse-IRS"
+repository-code: "https://github.com/Muse-IRS/Muze-X-Lab-Search-Dev"
+license: CC-BY-4.0
+abstract: "Open exploratory research preprints from Muze-X Lab: versioned scientific notes, falsifiable models, reproducible methods, provenance records, and disclosed human–AI collaborative contributions."
+keywords:
+  - exploratory research
+  - preprints
+  - reproducibility
+  - provenance
+  - human-AI collaboration
+  - falsifiability
